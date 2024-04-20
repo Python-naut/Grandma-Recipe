@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-in</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}">
+</head>
+<body>
+    <fieldset>
+        <legend>Sign-in</legend>
+        <form action="register" method="POST">
+            {% csrf_token %}
+            {{Form.as_p}}
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+</body>
+</html>

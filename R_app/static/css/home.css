@@ -1,0 +1,37 @@
+body {
+    background-color: #b7e4b9; /* light green background for the whole page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: cursive;
+}
+
+.container {
+    text-align: center;
+}
+
+fieldset {
+    display: inline-block;
+    text-align: center;
+    width: 300px; /* increased width for better alignment */
+    padding: 20px; /* added padding for spacing */
+    border-radius: 10px;
+    background-color: #ffffff; /* match the background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* add a slight shadow */
+    margin: 0 auto; /* horizontally center the fieldset */
+}
+
+button {
+    background-color: #28a745; /* green color for buttons */
+    color: #ffffff; /* white text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px; /* add some spacing between buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* darker green on hover */
+}

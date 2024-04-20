@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{Recipe.TITLE}}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
+</head>
+<body>
+    <div>
+        <fieldset class="container">
+            <legend>{{Recipe.TITLE}}</legend>
+            {% if Recipe.PICTURE %}
+                <img src="{{Recipe.PICTURE.url}}" alt="{{Recipe.TITLE}}">
+            {% else %}
+                <p>{{Recipe.TITLE}}</p>
+            {% endif %}
+            <p style="font-size: 15px">Ingredients:<br> {{Recipe.INGREDIENTS}}</p>
+            <p style="font-size: 15px">Instructions:<br> {{Recipe.INSTRUCTIONS}}</p>
+            <form action="{% url 'DISPLAY' %}" method="post">
+                {% csrf_token %}
+                <button type="submit">Previous Page</button>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

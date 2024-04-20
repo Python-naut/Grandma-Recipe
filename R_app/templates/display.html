@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GrandMa-Recipes</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/display.css' %}">
+</head>
+<body>
+    <div>
+        <div style="text-align: center;">
+            <h1>Grand-Ma Recipes</h1>
+        </div>
+        <div style="text-align: left;">
+            <button class="previous-button" type="submit"><a href="add_recipe">New Recipe</a></button>
+            <button class="previous-button" type="submit"><a href="logout">Log-out</a></button>
+        </div>
+    </div>
+    {% for recipe in Recipes %}
+    <fieldset class="container">
+        <legend>{{ recipe.TITLE }}</legend>
+        <div>
+            {% if recipe.PICTURE %}
+                <img src="{{ recipe.PICTURE.url }}">
+            {% else %}
+                <p>No picture available</p>
+            {% endif %}
+        </div>
+        <button class="detail-button" type="submit"><a href="detail/{{ recipe.id }}">Details</a></button>
+        <button class="edit-button" type="submit"><a href="edit_recipe/{{ recipe.id }}">Edit</a></button>
+        <button class="delete-button" type="submit"><a href="delete_recipe/{{ recipe.id }}">Delete</a></button>
+    </fieldset>
+    {% endfor %}
+
+</body>
+</html>

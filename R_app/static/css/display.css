@@ -1,0 +1,66 @@
+body {
+    background-color: #b7e4b9; /* light green background for the whole page */
+    display: flex;
+    justify-content: flex-start; /* align items to the start of the flex container */
+    flex-wrap: wrap; /* allow content to wrap */
+    padding: 20px; /* add some padding */
+    margin: 0;
+    font-family: cursive;
+}
+
+.container {
+    text-align: center;
+    width: calc(50% - 20px); /* 50% width minus margin */
+    max-width: 300px; /* maximum width */
+    height: 255px; /* fixed height for recipe cards */
+    margin: 40px; /* add margin around each recipe card */
+    border-radius: 10px;
+    background-color: #ffffff; /* white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* add a slight shadow */
+}
+
+legend {
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px; /* add some spacing between buttons */
+    color: #ffffff;
+}
+
+.detail-button {
+    background-color: #28a745;
+}
+
+.delete-button {
+    background-color: #fc0000;
+}
+
+.edit-button {
+    background-color: #fcf000;
+}
+
+.previous-button {
+    background-color: #007bff;
+}
+
+img {
+    width: 80%; /* set image width to 80% of its container */
+    height: auto; /* maintain aspect ratio */
+    max-width: 150px; /* limit maximum width to 150px */
+    max-height: 120px; /* limit maximum height to 120px */
+}
+
+h1 {
+    font-size: 55px; /* Set font size to 55 pixels */
+    color: #218838; /* Use a shade of green that matches your theme */
+    text-align: center; /* Align the text to the center */
+    font-family: cursive;
+    margin-left: 200px;
+}
+

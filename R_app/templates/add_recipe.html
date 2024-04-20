@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Recipe</title>
+    <linK rel="stylesheet" type="text/css" href="{% static 'css/add_recipe.css' %}">
+</head>
+<body>
+    <fieldset>
+        <legend>A New Recipe...? </legend>
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{Form.as_p}}
+            <button type="submit">Submit</button>
+        </form>
+        <form action="{% url 'DISPLAY' %}" method="post">
+                {% csrf_token %}
+                <button type="button">Previous Page</button>
+        </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body {
+    background-color: #b7e4b9; /* Match the background color of previous pages */
+    font-family: cursive; /* Use Arial font */
+    margin: 0; /* Remove default body margin */
+    padding: 20px; /* Add padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+    text-align: center; /* Center-align content */
+}
+
+fieldset {
+    display: inline-block;
+    width: 350px;
+    height: 750px;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    padding: 20px; /* Add padding */
+}
+
+legend {
+    font-size: 35px; /* Set legend font size */
+    text-align: center; /* Center-align legend */
+    margin-bottom: 20px; /* Add margin at the bottom */
+    font-family: cursive;
+}
+
+button[type="submit"] {
+    background-color: #28a745; /* Green button background */
+    color: #ffffff; /* White button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin-top: 20px; /* Add margin at the top */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+button[type="button"] {
+    background-color: #007bff; /* Blue button background */
+    color: #ffffff; /* White button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin-top: 20px; /* Add margin at the top */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button[type="button"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
